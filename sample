@@ -1,8 +1,0 @@
-<p><a href="image.html" target="iframe_a">View logo</a></p> 
-<h3>Video frame</h3> 
-<iframe width="550" height="315" 
-src="https://www.youtube.com/embed/qP23O70ve7k?si=BzAlRdEeLqq4zmB7" frameborder="0" 
-allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in- picture" 
-allow fullscreen style="padding:20px;"></iframe> 
-</body> 
-</html> 
