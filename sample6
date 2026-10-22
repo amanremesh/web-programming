@@ -1,0 +1,88 @@
+Experiment 6 – JavaScript String and Math Functions
+
+
+Objective:
+To create an HTML page to demonstrate the use of various predefined functions in String and Math objects in JavaScript.
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>String and Math Functions</title>
+</head>
+
+<body>
+
+<h2>JavaScript String and Math Functions</h2>
+
+<script>
+
+let str = "Web Programming";
+
+document.write("<b>String:</b> " + str + "<br><br>");
+
+document.write("1. Length = " + str.length + "<br>");
+
+document.write("2. Uppercase = " + str.toUpperCase() + "<br>");
+
+document.write("3. Lowercase = " + str.toLowerCase() + "<br>");
+
+document.write("4. Character at position 2 = " 
+               + str.charAt(2) + "<br>");
+
+document.write("5. Substring = " 
+               + str.substring(0, 3) + "<br><br>");
+
+document.write("<b>Math Functions</b><br>");
+
+document.write("6. Square Root of 25 = " 
+               + Math.sqrt(25) + "<br>");
+
+document.write("7. Power 2³ = " 
+               + Math.pow(2, 3) + "<br>");
+
+document.write("8. Absolute Value of -10 = " 
+               + Math.abs(-10) + "<br>");
+
+document.write("9. Round 5.6 = " 
+               + Math.round(5.6) + "<br>");
+
+document.write("10. Maximum of 10 and 20 = " 
+               + Math.max(10, 20) + "<br>");
+
+document.write("11. Minimum of 10 and 20 = " 
+               + Math.min(10, 20) + "<br>");
+
+</script>
+
+</body>
+</html>
+Input / Commands:
+HTML
+
+
+Output:
+JavaScript String and Math Functions
+
+
+
+String: Web Programming
+
+1. Length = 15
+2. Uppercase = WEB PROGRAMMING
+3. Lowercase = web programming
+4. Character at position 2 = b
+5. Substring = Web
+
+Math Functions
+6. Square Root of 25 = 5
+7. Power 2³ = 8
+8. Absolute Value of -10 = 10
+9. Round 5.6 = 6
+10. Maximum of 10 and 20 = 20
+11. Minimum of 10 and 20 = 10
+
+
+Result/Observations:
+The HTML page was created successfully and the predefined String and Math functions of JavaScript were demonstrated.
