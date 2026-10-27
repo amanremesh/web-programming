@@ -27,7 +27,7 @@
         var firstDay = new Date(year, m, 1).getDay();
         var totalDays = new Date(year, m + 1, 0).getDate();
 
-        var t = "<table><caption>" + months[m] + " " + year + "</caption><tr>";
+        var t = "<table><caption>" + months[m] + "</caption><tr>";
         for (var d = 0; d < 7; d++) t += "<th>" + days[d] + "</th>";
         t += "</tr><tr>";
 
