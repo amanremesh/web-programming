@@ -1,76 +1,68 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration Form</title>
 </head>
-<body>
-    <form>
-        <table>
-            <tr><th colspan="3"><u>Registration Form</u></th></tr>
-            <tr><td>NAME</td>
-            <td colspan="2"><input type="text">  </td>>
-        </td></tr>
-        <tr><td>AGE</td>
-        <td colspan="2"><select>
-            <option>SELECT</option>
-            <option>13</option>
-            <option>14</option>
-            <option>15</option>
-            <option>16</option>
-            <option>17</option>
-            <option>18</option>
-            <option>19</option>
-            <option>20</option>
-            <option>21</option>
-            <option>22</option>
-            <option>23</option>
-            <option>24</option>
-        </select></td></tr>
-        
-        <tr><td >PASSWORD</td>
-        <td colspan="2"><input type="password"></td></tr>
-        <tr><td >RETYPE PASSWORD</td>
-        <td colspan="2"><input type="password"></td></tr>
 
-        <tr>
-            <td rowspan="4">SELECT YOUR SECURITY QUESTION</td>
-            <td colspan="2"><input type="radio" name="security">what is your pet name?</td>
-        </tr>
-        <tr><td colspan="2"><input type="radio" name="security">who is your best friend?</td></tr>
-        <tr><td colspan="2"><input type="radio" name="security">what is your favorite color?</td></tr>
-        <tr><td colspan="2"><input type="radio" name="security">who is your favorite teacher?</td></tr>
+<body bgcolor="lightblue">
+<center>
 
-        <tr><td>ANSWER OF SECURITY QUESTION</td>
-        <td colspan="2"><input type="text"></td></tr>
+    <h2 style="color:darkblue;">Student Registration Form</h2>
 
-        <tr><td> EMAIL ID</td>
-        <td colspan="2"><input type="email"></td></tr>
+    <form onsubmit="register(event)">
+        <table cellpadding="8">
 
-        <tr><td>LANGUAGE KNOWN</td>
-        <td colspan="2">
-            <input type="checkbox" name="language" value="English"> English
-            <input type="checkbox" name="language" value="Spanish"> Spanish
-            <input type="checkbox" name="language" value="French"> French
-        </td></tr>
+            <tr><td>Name:</td><td><input type="text" required></td></tr>
+            <tr><td>Email:</td><td><input type="email" required></td></tr>
+            <tr><td>Password:</td><td><input type="password" required></td></tr>
 
-        <tr><td colspan="2">PHONE NUMBER</td>
-        <tr></tr><td>HOME</td>
-        <td>OFFICE</td>
-        </tr>
-        <tr>
-            <td><input type="text"></td>
-            <td colspan="2"><input type="text"></td>
-        </tr>
-        <tr><td>UPLOAD CV</td>
-        <td colspan="2"><input type="file"></td>
-        </tr>
-        <tr>
-         <td style="text-align: center;"><input type="reset" style="background-color:red;color: azure; padding: 6px 12px; border: 1px solid transparent;">
-         <td colspan="2"style="text-alin:center," ><input type="submit" style="background-color: green; color: white; padding: 6px 12px; border: 1px solid transparent;"></td>
-         </tr>
+            <tr><td>Gender:</td><td>
+                <input type="radio" name="gender" required> Male
+                <input type="radio" name="gender"> Female
+                <input type="radio" name="gender"> Other
+            </td></tr>
 
+            <tr><td>DOB:</td><td><input type="date"></td></tr>
+
+            <tr><td>Hobbies:</td><td>
+                <input type="checkbox"> Reading
+                <input type="checkbox"> Music
+                <input type="checkbox"> Sports
+            </td></tr>
+
+            <tr><td>Course:</td><td>
+                <select required>
+                    <option value="">Select</option>
+                    <option>MCA</option>
+                    <option>MBA</option>
+                    <option>BCA</option>
+                </select>
+            </td></tr>
+
+            <tr><td>Address:</td><td>
+                <textarea rows="3" cols="20"></textarea>
+            </td></tr>
+
+            <tr><td></td><td>
+                <input type="submit" value="Register" style="background:lightgreen;">
+                <input type="reset" value="Clear" style="background:lightcoral;">
+            </td></tr>
+
+        </table>
     </form>
+
+    <h3 id="msg" style="color:green;"></h3>
+
+</center>
+
+<script>
+function register(e) {
+    e.preventDefault();
+    document.getElementById("msg").innerHTML =
+        "Registration Successful!";
+}
+</script>
+
 </body>
 </html>
